@@ -3,15 +3,21 @@ import "./App.css";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Switch } from "react-router-dom";
-
+import { Route, Routes, Navigate } from "react-router-dom";
 function App() {
   return (
-    
-    
-  )
+    <Header />
+    // <Routes>
+    //   <Route to="/" component={Home} />
+    //   <Route to="/product" component={Product} />
+    //   <Route to="/about" component={About} />
+    //   <Route to="/contact" component={Contact} />
+    //   <Navigate to="/" component={Home} />
+    // </Routes>
+  );
 }
 
 export default App;

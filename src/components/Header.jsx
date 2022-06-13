@@ -1,11 +1,38 @@
-import React from 'react'
-
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../css/Header.css";
 const Header = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <nav className="navbar">
+      <div className="navbar__items">
+        <div className="navbar__links">
+          <ul>
+            <li>
+              <NavLink className="navbar__link" to="/home">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="navbar__link" to="/product">
+                Product
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="navbar__link" to="/about">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="navbar__link" to="/contact">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <span className="navbar__brandName">APPLE MART</span>
+      </div>
+    </nav>
+  );
+};
 
-export default Header
+export default Header;
