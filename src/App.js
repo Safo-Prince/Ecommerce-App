@@ -7,9 +7,13 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes, Navigate } from "react-router-dom";
+import Signup from "./components/buttons/Signup";
 function App() {
   return (
-    <Header />
+    <div>
+      <Signup />
+      <Header />
+    </div>
     // <Routes>
     //   <Route to="/" component={Home} />
     //   <Route to="/product" component={Product} />

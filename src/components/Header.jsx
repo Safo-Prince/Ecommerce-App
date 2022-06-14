@@ -29,7 +29,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <span className="navbar__brandName">APPLE MART</span>
+        <span className="navbar__">APPLE MART</span>
       </div>
     </nav>
   );
