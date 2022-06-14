@@ -1,0 +1,20 @@
+.cartButton {
+  border: 1px solid rgb(0, 123, 255);
+  border-radius: 4px;
+  display: flex;
+  font-weight: 900;
+  padding: 10px;
+  color: rgb(0, 123, 255) !important;
+  background-color: white;
+  cursor: pointer;
+}
+.cartButton__icon {
+  margin-right: 5px;
+}
+
+.cartButton:hover,
+.login--button:hover {
+  color: white !important;
+  background-color: rgb(0, 123, 255) !important ;
+  transition: 300ms ease-in;
+}

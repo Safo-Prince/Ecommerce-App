@@ -3,11 +3,11 @@ import AiOutlineClose from "@meronex/icons/ai/AiOutlineClose";
 import "../../css/Modal.css";
 import AiOutlineGoogle from "@meronex/icons/ai/AiOutlineGoogle";
 import BilFacebook from "@meronex/icons/bi/BilFacebook";
-const Modal = ({ setIsOpen }) => {
+const SigninModal = ({ setIsOpen }) => {
   return (
     <>
       <div className="modal" onClick={() => setIsOpen(false)}>
-        <div className="modal--dialog">
+        <div className="modal--signupDialog">
           <div className="modal--content" onClick={() => setIsOpen(true)}>
             <div className="modal--header">
               <h3> Login</h3>
@@ -66,4 +66,4 @@ const Modal = ({ setIsOpen }) => {
   );
 };
 
-export default Modal;
+export default SigninModal;

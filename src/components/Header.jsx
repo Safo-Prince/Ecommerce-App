@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../css/Header.css";
+import CartButton from "./buttons/CartButton";
+import Login from "./buttons/Login";
+import Signup from "./buttons/Signup";
 const Header = () => {
   return (
     <nav className="navbar">
@@ -29,7 +32,18 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <span className="navbar__">APPLE MART</span>
+        <span className="navbar__brandName">APPLE MART</span>
+        <div className="navbar__buttons">
+          <div className="navbar__button">
+            <Signup />
+          </div>
+          <div className="navbar__button">
+            <Login />
+          </div>
+          <div className="navbar__button">
+            <CartButton />
+          </div>
+        </div>
       </div>
     </nav>
   );

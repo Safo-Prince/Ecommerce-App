@@ -8,19 +8,18 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Signup from "./components/buttons/Signup";
+import Login from "./components/buttons/Login";
 function App() {
   return (
-    <div>
-      <Signup />
+    <>
       <Header />
-    </div>
-    // <Routes>
-    //   <Route to="/" component={Home} />
-    //   <Route to="/product" component={Product} />
-    //   <Route to="/about" component={About} />
-    //   <Route to="/contact" component={Contact} />
-    //   <Navigate to="/" component={Home} />
-    // </Routes>
+      <Routes>
+        <Route to="/" component={Home} />
+        <Route to="/product" component={Product} />
+        <Route to="/about" component={About} />
+        <Route to="/contact" component={Contact} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,14 +1,18 @@
 import React, { useState } from "react";
-import Modal from "./SignUpModal";
-
+import SigninModal from "./SigninModal";
+import EnLogin from "@meronex/icons/en/EnLogin";
+import "../../css/signup.css";
 const Signup = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <button className="primarybtn" onClick={() => setIsOpen(true)}>
-        Open Modal
+    <div className="Signup">
+      <button className="signup--button" onClick={() => setIsOpen(true)}>
+        <div className="signup--buttonIcon">
+          <EnLogin />
+        </div>
+        Login
       </button>
-      {isOpen && <Modal setIsOpen={setIsOpen} />}
+      {isOpen && <SigninModal setIsOpen={setIsOpen} />}
     </div>
   );
 };
