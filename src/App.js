@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <Header />
+      <Home />
       <Routes>
         <Route to="/" component={Home} />
         <Route to="/product" component={Product} />
