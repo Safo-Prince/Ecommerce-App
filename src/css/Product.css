@@ -1,0 +1,13 @@
+.name {
+  position: relative;
+  left: 41.0%;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.product__line {
+  width: 68vw;
+  border: 1px solid black;
+  position: relative;
+  left: 11%;
+  margin-bottom: 50px;
+}
