@@ -1,4 +1,6 @@
 .card {
+  box-sizing: border-box;
+  margin-bottom: 100px;
   margin-left: 180px;
   display: grid;
   column-gap: 30px;
