@@ -1,0 +1,64 @@
+.contact {
+  background-color: rgb(252, 252, 252);
+  height: 100vh;
+}
+.contact__header > h2 {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__straightline {
+  width: 1500px;
+  border-top: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact__main {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__mainForm {
+  margin-right: 70px;
+  margin-top: 30px;
+}
+.contact__mainformGroup {
+  padding: 10px;
+}
+.contact__mainformGroup input:focus,
+textarea:focus {
+  box-shadow: 0 0 9px rgb(0, 123, 255);
+  border: 2px solid rgb(0, 123, 255, 0.2);
+  transition: 300ms;
+}
+.contact__mainformGroup input {
+  display: block;
+  height: 40px;
+  width: 540px;
+  margin-top: 20px;
+  outline: gray;
+}
+.contact__textarea {
+  padding: 10px;
+  margin-left: 10px;
+  width: 540px;
+  outline: none;
+}
+.contact__button {
+  margin-top: 5px;
+  height: 40px;
+  margin-left: 5px;
+}
+.contact__button button {
+  border-radius: 4px;
+  border: 1px solid rgb(0, 123, 255);
+  color: rgb(0, 123, 255);
+
+  background-color: white;
+}
+.contact__button button:hover {
+  color: white;
+  background-color: rgb(0, 123, 255);
+  transition: 300ms ease-in;
+  cursor: pointer;
+}

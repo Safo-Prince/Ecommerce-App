@@ -44,7 +44,6 @@ const LoginModal = ({ setIsOpen }) => {
                     <label> Email Address</label>
                     <input type="text" />
                     <small>
-                      {" "}
                       We'll never share your email with anyone else.
                     </small>
                   </div>

@@ -7,10 +7,9 @@ import { SliderData } from "./SlideData";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
+    <>
       <ImageSlider slides={SliderData} />
-    </div>
+    </>
   );
 };
 

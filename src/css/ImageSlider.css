@@ -23,3 +23,6 @@
   font-size: 50px;
   cursor: pointer;
 }
+.slider__image {
+  object-fit: cover;
+}

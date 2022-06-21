@@ -12,11 +12,12 @@ import Login from "./components/buttons/Login";
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/product" element={<Product />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Navigate to="/home" />} />
       </Routes>
     </>
