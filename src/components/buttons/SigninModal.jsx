@@ -6,9 +6,9 @@ import BilFacebook from "@meronex/icons/bi/BilFacebook";
 const SigninModal = ({ setIsOpen }) => {
   return (
     <>
-      <div className="modal" onClick={() => setIsOpen(false)}>
+      <div className="modal">
         <div className="modal--signupDialog">
-          <div className="modal--content" onClick={() => setIsOpen(true)}>
+          <div className="modal--content">
             <div className="modal--header">
               <h3> Login</h3>
               <span>

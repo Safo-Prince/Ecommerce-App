@@ -1,0 +1,6 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  column-gap: 500px;
+  row-gap: 150px;
+}

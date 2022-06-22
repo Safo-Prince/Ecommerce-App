@@ -1,14 +1,16 @@
 import React from "react";
-import Card from "./Card";
-import Header from "./Header";
 import ImageSlider from "./ImageSlider";
 import Product from "./Product";
 import { SliderData } from "./SlideData";
+import "../css/Home.css";
 
 const Home = () => {
   return (
     <>
-      <ImageSlider slides={SliderData} />
+      <div className="home">
+        <ImageSlider slides={SliderData} />
+        <Product />
+      </div>
     </>
   );
 };
