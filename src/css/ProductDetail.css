@@ -39,8 +39,10 @@
   border: 1px solid rgb(0, 123, 255);
   background-color: white;
   color: rgb(0, 123, 255);
-}
-.productdetail__button:hover {
-  background-color: rgb(255, 251, 251);
   cursor: pointer;
+}
+
+.cartbutton--active {
+  color: white;
+  background: rgb(0, 123, 255);
 }

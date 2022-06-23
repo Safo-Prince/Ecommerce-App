@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "./Card";
-import Header from "./Header";
 import "../css/Product.css";
-import Pagination from "./Pagination";
 
 const Product = () => {
+ 
+
   return (
     <>
       <div className="product">
@@ -13,7 +13,7 @@ const Product = () => {
         </div>
         <div className="product__line"></div>
         <Card />
-        <Pagination/>
+        
       </div>
     </>
   );

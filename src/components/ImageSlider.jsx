@@ -34,6 +34,7 @@ const ImageSlider = ({ slides }) => {
                 width="1680 "
                 height="700"
                 className="slider__image"
+                alt="Link is broken"
               />
             )}
           </div>

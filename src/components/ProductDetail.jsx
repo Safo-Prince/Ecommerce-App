@@ -5,7 +5,7 @@ import "../css/ProductDetail.css";
 import { CardData } from "./CardData";
 const ProductDetail = () => {
   const { id } = useParams();
-  const product = CardData.filter((product) => product.id == id);
+  const product = CardData.filter((product) => product.id ==id);
   const productItem = product[0];
   const [cartButton, setCartButton] = useState("Add to Cart");
   const handleCartButton = (product) => {
@@ -33,7 +33,12 @@ const ProductDetail = () => {
           <div className="productdetail__description">
             <p>{productItem.desc}</p>
           </div>
-          <button onClick={handleCartButton} className="productdetail__button">
+          <button
+            onClick={handleCartButton}
+            className={`productdetail__button ${
+              cartButton === "Remove from Cart" ? "cartbutton--active" : null
+            }`}
+          >
             {cartButton}
           </button>
         </section>
