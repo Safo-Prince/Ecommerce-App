@@ -51,12 +51,10 @@ const SigninModal = ({ setIsOpen }) => {
                     <input type="checkbox"></input>
                     <label> check me out</label>
                   </div>
+                  <button className="modal--bodSubmitButton" type="submit">
+                    Submit
+                  </button>
                 </form>
-              </div>
-              <div>
-                <button className="modal--bodSubmitButton" type="submit">
-                  Submit
-                </button>
               </div>
             </div>
           </div>

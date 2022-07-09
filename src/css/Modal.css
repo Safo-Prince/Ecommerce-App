@@ -64,7 +64,9 @@
 }
 .modal--bodyform {
   margin-top: 20px;
+  box-sizing: border-box;
 }
+
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
@@ -74,21 +76,31 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-.modal--bodyFormGroup {
-  margin: 20px 0;
-}
 .modal--bodyFormCheck {
   margin-top: 20px;
 }
 .modal--bodSubmitButton {
+  background-color: rgb(0, 123, 255);
   width: 100%;
 }
 .modal--bodSubmitButton {
   border-radius: 4px;
   height: 40px;
-  margin-top: 90px;
-  color: rgb(0, 123, 255);
+  margin-top: 50px;
+  color: white;
   font-size: larger;
   border: 1px solid gray;
-  background-color: white;
+  background-color: rgb(0, 123, 255);
+}
+.modal--bodSubmitButton:disabled {
+  background-color: red;
+}
+
+.form__alert {
+  color: red;
+  height: 40px;
+}
+form {
+  height: 50px;
+  box-sizing: border-box;
 }

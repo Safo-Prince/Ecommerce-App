@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "@meronex/icons": "^4.0.0",
+    "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "joi-browser": "^13.4.0",
     "lodash": "^4.17.10",
     "modern-normalize": "^1.1.0",
     "normalize.css": "^8.0.1",
@@ -16,6 +18,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

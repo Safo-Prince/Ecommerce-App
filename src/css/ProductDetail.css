@@ -45,4 +45,5 @@
 .cartbutton--active {
   color: white;
   background: rgb(0, 123, 255);
+  transition: 1000ms;
 }
