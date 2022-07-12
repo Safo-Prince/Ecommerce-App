@@ -1,9 +1,11 @@
-import configureAppStore from "./configStore";
-import * as actions from "./items";
+// import configureAppStore from "./configStore";
+// import * as actions from "./items";
 
-const store = configureAppStore();
+// const store = configureAppStore();
 
-store.subscribe(() => {});
+// store.subscribe(() => {});
 
-store.dispatch(actions.deleteItem({ product }));
-store.dispatch(actions.addItem({ product }));
+// store.dispatch(actions.deleteItem(product));
+// store.dispatch(actions.addItem(product));
+
+

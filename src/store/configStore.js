@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import reducer from "./items";
+import createReducer from "./items";
 
 export default function configureAppStore() {
-  return configureStore({ reducer });
+  return configureStore({ reducer: { selctedProducts: createReducer } });
 }

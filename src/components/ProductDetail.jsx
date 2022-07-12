@@ -3,15 +3,30 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../css/ProductDetail.css";
 import { CardData } from "./CardData";
+import { useDispatch } from "react-redux";
+import * as actions from "../store/items";
+
 const ProductDetail = () => {
   const { id } = useParams();
-  const product = CardData.filter((product) => product.id ==id);
+  const product = CardData.filter((product) => product.id == id);
   const productItem = product[0];
   const [cartButton, setCartButton] = useState("Add to Cart");
+  const dispatch = useDispatch();
+
   const handleCartButton = (product) => {
-    setCartButton(
-      cartButton === "Add to Cart" ? "Remove from Cart" : "Add to Cart"
-    );
+    if (cartButton == "Add to Cart") {
+      dispatch(actions.addItem(productItem));
+      console.log(actions.addItem(productItem));
+      setCartButton("Remove from Cart");
+    } else {
+      dispatch(actions.deleteItem(productItem));
+      console.log(actions.deleteItem(productItem));
+      setCartButton("Add to Cart");
+    }
+
+    // setCartButton(
+    //   cartButton === "Add to Cart" ? "Remove from Cart" : "Add to Cart"
+    // );
   };
 
   return (

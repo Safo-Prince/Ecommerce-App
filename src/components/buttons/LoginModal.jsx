@@ -124,4 +124,3 @@ const LoginModal = ({ setIsOpen }) => {
   );
 };
 export default LoginModal;
-``
