@@ -1,3 +1,6 @@
+.cart {
+  text-decoration: none;
+}
 .cartButton {
   border: 1px solid rgb(0, 123, 255);
   border-radius: 4px;

@@ -27,7 +27,7 @@
 }
 .contact__mainformGroup input:focus,
 textarea:focus {
-  box-shadow: 0 0 9px rgb(0, 123, 255);
+  box-shadow: 0 0 2px rgb(0, 123, 255);
   border: 2px solid rgb(0, 123, 255, 0.2);
   transition: 300ms;
 }
