@@ -12,3 +12,29 @@
   display: flex;
   justify-content: center;
 }
+
+.cartContents {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(244, 244, 244);
+}
+
+.itemName > h3 {
+  font-size: 50px;
+}
+.itemName > h4 {
+  font-size: 30px;
+  color: brown;
+}
+.closeButton {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+  height: 30px;
+  background-color: rgb(244, 244, 244);
+  border: none;
+}
+.closeButton :hover {
+  cursor: pointer;
+}

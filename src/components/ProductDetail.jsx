@@ -20,7 +20,7 @@ const ProductDetail = () => {
       setCartButton("Remove from Cart");
     } else {
       dispatch(actions.deleteItem(productItem));
-      console.log(actions.deleteItem(productItem));
+      
       setCartButton("Add to Cart");
     }
 
